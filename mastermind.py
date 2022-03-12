@@ -40,3 +40,13 @@ elif vermelhos == 4:
     message = "Parabéns! Voce acertou em " + str(rodada) + " jogadas. <a href=''>Jogar novamente</a>"
 else:    
     message = "Voce tem " + str(vermelhos) + " digitos corretos no lugar correto, e " + str(brancos) + " digitos corretos no lugar errado. Voce teve " + str(rodada) + " jogada(s)."
+
+
+print '<h1>Mastermind</h1>'
+print "<p>" + message + "</p>"
+print '<form method="post">'
+print '<input type="text" name="jogada" value="' + jogada + '">'
+print '<input type="hidden" name="resposta" value = "' + resposta + '">'
+print '<input type="hidden" name="rodada" value = "' + str(rodada) + '">'
+print '<input type="submit" value="jogada!">'
+print '</form>'
